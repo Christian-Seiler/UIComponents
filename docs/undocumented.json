@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/christianseiler/Developer/UIComponents/Sources/UIComponents/EditableDateRow.swift",
+      "line": 10,
+      "symbol": "EditableDateRow",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/christianseiler/Developer/UIComponents/Sources/UIComponents/EditableDateRow.swift",
+      "line": 17,
+      "symbol": "EditableDateRow.init(_:date:isEditing:dateFormatter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/christianseiler/Developer/UIComponents/Sources/UIComponents/EditableTextfield.swift",
+      "line": 11,
+      "symbol": "EditableTextfield",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/christianseiler/Developer/UIComponents/Sources/UIComponents/EditableTextfield.swift",
+      "line": 17,
+      "symbol": "EditableTextfield.init(_:text:isEditing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/christianseiler/Developer/UIComponents/Sources/UIComponents/ProgressBar.swift",
+      "line": 11,
+      "symbol": "ProgressBar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/christianseiler/Developer/UIComponents"
+}
