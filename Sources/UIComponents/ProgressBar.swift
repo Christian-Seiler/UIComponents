@@ -1,6 +1,6 @@
 //
 //  ProgressBar.swift
-//  PublicTransportCalculator
+//  UIComponents
 //
 //  Created by Christian Seiler on 18.07.20.
 //  Copyright © 2020 Christian Seiler. All rights reserved.
@@ -10,6 +10,12 @@ import SwiftUI
 
 public struct ProgressBar: View {
 
+    #if canImport(UIKit)
+    typealias MyColor = UIColor
+    #else
+    typealias MyColor = NSColor
+    #endif
+    
     @Binding var value: Double
     @Binding var max: Double
 
@@ -20,12 +26,12 @@ public struct ProgressBar: View {
                     .frame(width: geometry.size.width,
                            height: self.height)
                     .opacity(self.opacity)
-                    .foregroundColor(Color(UIColor.systemTeal))
+                    .foregroundColor(Color(MyColor.systemTeal))
 
                 Rectangle()
                     .frame(width: self.width(for: geometry.size),
                            height: self.height)
-                    .foregroundColor(Color(UIColor.systemBlue))
+                    .foregroundColor(Color(MyColor.systemBlue))
             }
             .cornerRadius(self.cornerRadius)
         }

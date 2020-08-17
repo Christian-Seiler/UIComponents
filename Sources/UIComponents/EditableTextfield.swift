@@ -1,6 +1,6 @@
 //
 //  EditableTextfield.swift
-//  PublicTransportCalculator
+//  UIComponents
 //
 //  Created by Christian Seiler on 18.07.20.
 //  Copyright © 2020 Christian Seiler. All rights reserved.
@@ -8,21 +8,22 @@
 
 import SwiftUI
 
-struct EditableTextfield: View {
+public struct EditableTextfield: View {
 
     var title: String
     @Binding var text: String
     @Binding var isEditing: Bool
 
-    init(_ title: String,
+    public init(_ title: String,
          text: Binding<String>,
          isEditing: Binding<Bool> = .constant(true)) {
+
         self.title = title
         _text = text
         _isEditing = isEditing
     }
 
-    var body: some View {
+    public var body: some View {
         HStack {
             TextField(title, text: $text)
                 .disabled(!isEditing)
@@ -38,7 +39,8 @@ struct EditableTextfield: View {
     }
 }
 
-struct TextFieldView_Previews: PreviewProvider {
+
+struct EditableTextfield_Previews: PreviewProvider {
 
     static var previews: some View {
         NavigationView {
