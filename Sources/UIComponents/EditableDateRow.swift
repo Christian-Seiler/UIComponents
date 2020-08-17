@@ -25,13 +25,14 @@ public struct EditableDateRow: View {
     }
 
     public var body: some View {
-        if isEditing {
-            DatePicker(self.title, selection: $date)
-        } else {
-            HStack {
-                Text(self.title)
-                Spacer()
-                Text(dateFormatter.string(from: date))
+        Group {
+            if isEditing {
+                 DatePicker(self.title, selection: $date)
+                 HStack {
+                    Text(self.title)
+                    Spacer()
+                    Text(dateFormatter.string(from: date))
+                }
             }
         }
     }
