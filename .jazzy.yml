@@ -1,0 +1,12 @@
+author: "Christian Seiler"
+author_url: http://www.christianseiler.ch
+copyright: Christian Seiler Services
+
+module: UIComponents
+module_version: 1.0.0
+
+swift_build_tool: spm
+swift_version: 5
+source_directory: ./Sources
+
+sdk: iphone
